@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7 lte9 lte8 lte7" lang="en-US"><![endif]-->
+<!--[if IE 8]><html class="ie ie8 lte9 lte8" lang="en-US">	<![endif]-->
+<!--[if IE 9]><html class="ie ie9 lte9" lang="en-US"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="noIE" lang="en-US">
+<!--<![endif]-->
+	<head>
+		<!-- meta -->
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no"/>
+	<title>Euro Travel</title>
+
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/ionicons.min.css">
+	<link rel="stylesheet" href="assets/css/owl.carousel.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/section.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+			<!--[if lt IE 9]>
+				<script src="assets/js/html5shiv.js"></script>
+				<script src="assets/js/respond.js"></script>
+			<![endif]-->
+
+			<!--[if IE 8]>
+		    	<script src="assets/js/selectivizr.js"></script>
+		    <![endif]-->
+	<script
+		src="http://maps.googleapis.com/maps/api/js">
+	</script>
+</head>
+<body>
+
+<!-- Home -->
+	<section class="header">
+		
+		<nav class="navbar navbar-default">
+			<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html" title="HOME"><i class="ion-paper-airplane"></i> LURE<span>Fishing</a>
+				</div> <!-- /.navbar-header -->
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="index.html">首頁</a></li>
+						<li><a href="about.html">關於我們</a></li>
+						<li><a href="services.html">會員中心</a></li>
+						<li><a href="contact.html">聯絡我們</a></li>
+					</ul> <!-- /.nav -->
+			    </div><!-- /.navbar-collapse -->
+		  	</div><!-- /.container -->
+		</nav>
+	</section> <!-- /#header -->
+
+<!-- Section Background -->
+	<section class="section-background">
+		<div class="container">
+			<h2 class="page-header"></h2>>
+		
+		</div> <!-- /.container -->
+	</section> <!-- /.section-background -->
+
+
+	<section class="section-wrapper contact-and-map">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<h2 class="section-title">
+						發送郵件訊息
+					</h2>
+					<div class="form">
+						<div class="input-group">		
+						 	<input class="form-control border-radius border-right" type="text" placeholder="姓名" required>
+						 	<span class="input-group-addon  border-radius custom-addon">
+								<i class="ion-person"></i>
+							</span>
+						</div>
+						<div class="input-group">		
+						 	<input class="form-control border-radius border-right" name="email" type="email" placeholder="電子信箱" required>
+						 	<span class="input-group-addon  border-radius custom-addon">
+								<i class="ion-email"></i>
+							</span>
+						</div>
+						<div class="input-group">		
+						 	<input class="form-control border-radius border-right" type="tel" placeholder="手機號碼">
+						 	<span class="input-group-addon  border-radius custom-addon">
+								<i class="ion-ios-telephone"></i>
+							</span>
+						</div>
+						<div class="input-group">
+						<textarea class="form-control border-radius border-right" rows="8" placeholder="您想傳遞的訊息"></textarea>	
+							<!-- <input type="text" name="text" rows="8" class="form-control border-radius border-right message" placeholder="Write Message"> -->
+							<span class="input-group-addon border-radius custom-addon">
+								<i class="ion-chatbubbles"></i>
+							</span>
+						</div>
+						<button type="submit" class="btn btn-default border-radius custom-button">發送訊息</button>
+					</div>
+				</div> <!-- /.col-sm-6 -->
+				<div class="col-sm-6">
+					<h2 class="section-title">
+						在地圖上找到我們
+					</h2>
+					<div id="googleMap"></div>
+				</div> <!-- /.col-sm-6 -->
+			</div>
+		</div>
+	</section>
+
+
+
+	<section class="contacts section-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="contact">
+						<div class="contact-icon">
+							<i class="ion-android-map"></i>
+						</div>
+						<div class="contact-name">
+							地址
+						</div>
+						<div class="contact-detail">
+							台南市XX區XX路三段XX號
+						</div>
+					</div> <!-- /.contact -->
+				</div> <!-- /.col-sm-4 -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<div class="contact-icon">
+							<i class="ion-ios-telephone"></i>
+						</div>
+						<div class="contact-name">
+							電話號碼
+						</div>
+						<div class="contact-detail">
+							市話: 01-12345678 <br>
+							手機號碼: 0912345678
+						</div>
+					</div> <!-- /.contact -->
+				</div> <!-- /.col-sm-4 -->
+				<div class="col-sm-4">
+					<div class="contact">
+						<div class="contact-icon">
+							<i class="ion-email"></i>
+						</div>
+						<div class="contact-name">
+							電子信箱
+						</div>
+						<div class="contact-detail">
+							LureFishing@gmail.com <br>
+							<a href="LureFishing@gmail.com">LureFishing@gmail.com</a>
+						</div>
+					</div> <!-- /.contact -->
+				</div> <!-- /.col-sm-4 -->
+			</div> <!-- /.row -->
+		</div> <!-- /.container -->
+	</section> <!-- /.contacts -->
+ 
+
+
+	<div class="subscribe section-wrapper">
+		<a class="brand-logo" href="index.html" title="HOME"><i class="ion-paper-airplane"></i> Lure <span>Fishing</span></a>
+		<p class="subscribe-now">
+			關注我們獲得最新資訊
+		</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-6 col-md-offset-4 col-sm-offset-3">
+					<div class="input-group">
+						<input type="email" class="form-control border-radius" placeholder="輸入電子信箱">
+						<span class="input-group-btn">
+							<button class="btn btn-default border-radius custom-sub-btn" type="button">訂閱</button>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+	
+	
+		<ul class="social-icon">
+			<li><a href="#"><i class="ion-social-twitter"></i></a></li>
+			<li><a href="#"><i class="ion-social-facebook"></i></a></li>
+			<li><a href="#"><i class="ion-social-linkedin-outline"></i></a></li>
+			<li><a href="#"><i class="ion-social-googleplus"></i></a></li>
+		</ul>
+	</div> 
+		
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-4">
+					<div class="text-left">
+						&copy; 版權所有 LureFishingTW
+					</div>
+				</div>
+				<div class="col-xs-4">
+					<div class="top">
+						<a href="#header">
+							<i class="ion-arrow-up-b"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</footer>
+
+
+
+	<script src="assets/js/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/contact.js"></script>
+	<script src="assets/js/script.js"></script>
+
+
+
+
+
+
+</body>
+</html>
